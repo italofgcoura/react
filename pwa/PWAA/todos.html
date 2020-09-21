@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang=”pt-br”>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="imagens/icones/favicon.ico" sizes="32x32" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PWA">
+    <meta name="theme-color" content="#F8ECC2">
+    <title>Remember IT</title>
+    <link rel="apple-touch-icon" sizes="72x72" href="/imagens/icones/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/imagens/icones/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/imagens/icones/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/imagens/icones/apple-icon-180x180.png">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+</head>
+
+<body>
+    <h1 class="col-12">TODOS RECADOS</h1>
+    <div class="row" id="iDrecados">
+    </div>
+    <button>
+        <a href="/">Voltar</a>
+    </button>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDSp0HyZa5b7fXxMjQ-k5LTbl3DCjdYr-o",
+            authDomain: "pwapuc.firebaseapp.com",
+            databaseURL: "https://pwapuc.firebaseio.com",
+            projectId: "pwapuc",
+            storageBucket: "pwapuc.appspot.com",
+            messagingSenderId: "694695151162",
+            appId: "1:694695151162:web:6cafb8deaa25fc4f5a1703"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="acoes/db.js"></script>
+    <script src="acoes/acoes.js"></script>
+    <script src="acoes/acoesTodos.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+</body>
+
+</html>
