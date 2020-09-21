@@ -1,0 +1,19 @@
+@font-face {
+    font-family: DaxlinePro-Medium;
+    src: url(DaxlinePro-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: DaxlinePro-Regular;
+    src: url(DaxlinePro-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: DaxlinePro-Thin;
+    src: url(DaxlinePro-Thin.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: DaxlinePro-Bold;
+    src: url(daxlinepro-bold.otf) format("OpenType");
+}

@@ -1,0 +1,137 @@
+h1 {
+    margin-top: 15px;
+    font-family: DaxlinePro-Bold;
+    font-size: 88px;
+    font-weight: bold;
+    position: relative;
+    line-height: 88px;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: DaxlinePro-Regular;
+}
+
+select {
+    border: none;
+}
+
+.inputSearch{
+    width: 300px;
+}
+
+.filtros {
+    position: relative;
+    margin: 40px 0px;
+}
+.result {
+    font-family: DaxlinePro-Bold;
+    font-size: 26px;
+    font-weight: bold;
+}
+.filtros::before,
+.filtros::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    opacity: 0.7;
+    width: calc(100% + 50px);
+    background-color: #808184;
+    left: -25px;
+}
+
+.filtros::after {
+    bottom: -15px;
+}
+
+.filtros::before {
+    top: -15px;
+}
+
+.btnLimpar {
+    position: absolute;
+    right: 0;
+    border: 2px solid #808184;
+    background-color: transparent;
+    padding: 0px 20px;
+}
+
+.cardLook {
+    padding: 50px 5px;
+    min-height: 425px;
+    height: 425px;
+    position: relative;
+}
+
+.cardLookInner {
+    /* background-color: red; */
+}
+
+.imagemDestacada {
+    width: 100%;
+    height: 200px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.infos {
+    padding: 25px 0px;
+}
+
+.nomePeca {
+    font-size: 24px;
+    line-height: 22px;
+    font-family: DaxlinePro-Medium;
+}
+
+/* .disponibilidade {
+    position: relative;
+}
+.disponibilidade:before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 5px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: red;
+} */
+
+.catPreco {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: DaxlinePro-Thin;
+}
+.btnDetalhe {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 10px);
+    border: none;
+    padding: 10px;
+    background-color: #107f92;
+}
+
+.nextPage {
+    height: 50px;
+    /* background-color: red; */
+    margin: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nextPage > button {
+    border: 2px solid #808184;
+    background-color: transparent;
+    font-family: DaxlinePro-Regular;
+    padding: 10px 30px;
+    font-size: 24px;
+    width: 300px;
+    font-weight: bold;
+}
