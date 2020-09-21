@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang=”pt-br”>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="imagens/icones/favicon.ico" sizes="32x32" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PWA">
+    <meta name="theme-color" content="#F8ECC2">
+    <title>Shared Notes</title>
+    <link rel="apple-touch-icon" sizes="72x72" href="/imagens/icones/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/imagens/icones/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/imagens/icones/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/imagens/icones/apple-icon-180x180.png">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+</head>
+
+<body>
+    <h1>Shared Notes</h1>
+    <form>
+        <textarea type="textarea" id="textoRecado"></textarea>
+        <div class="botoes">
+            <button type="submit">SALVAR</button>
+            <button>
+                <a href="/todos.html">VER TODOS</a>
+            </button>
+        </div>
+        <p>Aquele nome do filme, da música, aquele recado para compatilhar com todo mundo? Aqui é o seu lugar!</p>
+    </form>
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBuerXzutQtoBz4NxurVIeYI-IVXCH-kkQ",
+            authDomain: "pwapuc-27203.firebaseapp.com",
+            databaseURL: "https://pwapuc-27203.firebaseio.com",
+            projectId: "pwapuc-27203",
+            storageBucket: "pwapuc-27203.appspot.com",
+            messagingSenderId: "870220180350",
+            appId: "1:870220180350:web:79d3e11fa0fc0cd9bd212f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        let db = firebase.firestore();
+    </script>
+
+
+
+
+    <script src="acoes/db.js"></script>
+    <script src="acoes/acoes.js"></script>
+    <!-- <script src="acoes/acoesTodos.js"></script> -->
+    <script src="acoes/dbHome.js"></script>
+
+</body>
+
+</html>
